@@ -1,0 +1,186 @@
+:root {
+    --deep-aquamarine: hsl(158, 36%, 37%);
+    --deep-aquamarine-d: hsl(158, 36%, 20%);
+    --aurometal: hsl(228, 12%, 48%);
+    --gunmetal: hsl(212, 21%, 14%);
+    --cream: hsl(30, 38%, 92%);
+    --pure-white: hsl(0, 0%, 100%);
+    /* font variables */
+    --ff-accent: 'Fraunces', serif;
+    --ff-base: 'Montserrat', sans-serif;
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+/*****************************************************/
+/******************** CSS reset **********************/
+/*****************************************************/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+button {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*****************************************************/
+/******************** main styles **********************/
+/*****************************************************/
+
+body {
+    background-color: var(--cream);
+}
+
+main {
+    background-color: var(--pure-white);
+    margin: 1.75rem 1rem;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header, .description, .price {
+    padding: 1.5rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color: var(--aurometal);
+    font-size: 1.33rem;
+    margin: 1.5rem 0 1.33rem 0;
+    letter-spacing: 5px;
+    line-height: 0.94rem;
+}
+
+h2 {
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--gunmetal);
+}
+
+button {
+    width: 86%;
+    padding: 1rem;
+    background-color: var(--deep-aquamarine);
+    border-radius: 10px;
+    color: var(--pure-white);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+
+.centered {
+    margin: auto;
+}
+
+.description {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color: var(--aurometal);
+    font-size: 0.875rem;
+    line-height: 1.44rem;
+    padding-top: 0;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px red solid;
+}
+
+#new-price {
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+    color: var(--deep-aquamarine);
+    border: 2px red solid;
+}
+
+#old-price {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 0.8125rem;
+    text-decoration: line-through;
+    line-height: 1.4375rem;
+    color: var(--aurometal);
+    border: 2px red solid;
+}
+
+footer {
+    text-align: center;
+}
