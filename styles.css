@@ -1,16 +1,16 @@
 :root {
-    --aquamarine: hsl(150, 65%, 60%);
-    --deep-aquamarine: hsl(158, 36%, 37%);
-    --deep-aquamarine-d: hsl(158, 36%, 20%);
-    --aurometal: hsl(228, 12%, 48%);
-    --gunmetal: hsl(212, 21%, 14%);
-    --cream: hsl(30, 38%, 92%);
-    --pure-white: hsl(0, 0%, 100%);
-    /* font variables */
-    --ff-accent: 'Fraunces', serif;
-    --ff-base: 'Montserrat', sans-serif;
-    --fw-regular: 500;
-    --fw-bold: 700;
+  --aquamarine: hsl(150, 65%, 60%);
+  --deep-aquamarine: hsl(158, 36%, 37%);
+  --deep-aquamarine-d: hsl(158, 36%, 20%);
+  --aurometal: hsl(228, 12%, 48%);
+  --gunmetal: hsl(212, 21%, 14%);
+  --cream: hsl(30, 38%, 92%);
+  --pure-white: hsl(0, 0%, 100%);
+  /* font variables */
+  --ff-accent: 'Fraunces', serif;
+  --ff-base: 'Montserrat', sans-serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
 }
 
 /*****************************************************/
@@ -69,9 +69,9 @@ button {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -87,65 +87,65 @@ button {
 /*****************************************************/
 
 body {
-    background-color: var(--cream);
+  background-color: var(--cream);
 }
 
 main {
-    background-color: var(--pure-white);
-    margin: 1.75rem 1rem;
-    width: 90vw;
-    max-width: 600px;
-    height: calc(90vh-1rem);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
+  background-color: var(--pure-white);
+  margin: 1.75rem 1rem;
+  width: 90vw;
+  max-width: 600px;
+  height: calc(90vh-1rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
 }
 
 main img {
-    width: 100%;
+  width: 100%;
 }
 
 header {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-family: var(--ff-base);
-    font-weight: var(--fw-regular);
-    color: var(--aurometal);
-    font-size: 1.33rem;
-    margin: 1.5rem 0 1.33rem 0;
-    letter-spacing: 5px;
-    line-height: 0.94rem;
+  text-transform: uppercase;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  color: var(--aurometal);
+  font-size: 1.33rem;
+  margin: 1.5rem 0 1.33rem 0;
+  letter-spacing: 5px;
+  line-height: 0.94rem;
 }
 
 h2 {
-    font-family: var(--ff-accent);
-    font-weight: var(--fw-bold);
-    font-size: 2rem;
-    line-height: 2rem;
-    color: var(--gunmetal);
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--gunmetal);
 }
 
 button {
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--deep-aquamarine);
-    border: none;
-    border-radius: 10px;
-    color: var(--pure-white);
-    font-family: var(--ff-base);
-    font-weight: var(--fw-bold);
-    font-size: 0.875rem;
-    line-height: 1.06rem;
-    margin: auto;
-    margin-top: 1.25rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--deep-aquamarine);
+  border: none;
+  border-radius: 10px;
+  color: var(--pure-white);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-bold);
+  font-size: 0.875rem;
+  line-height: 1.06rem;
+  margin: auto;
+  margin-top: 1.25rem;
 }
 
 button:focus,
@@ -162,16 +162,16 @@ button:hover {
 }
 
 .centered {
-    margin: auto;
+  margin: auto;
 }
 
 .description {
-    font-family: var(--ff-base);
-    font-weight: var(--fw-regular);
-    color: var(--aurometal);
-    font-size: 0.875rem;
-    line-height: 1.44rem;
-    padding: 0 1.5rem;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  color: var(--aurometal);
+  font-size: 0.875rem;
+  line-height: 1.44rem;
+  padding: 0 1.5rem;
 }
 
 .price {
@@ -183,29 +183,29 @@ button:hover {
 }
 
 #new-price {
-    font-family: var(--ff-accent);
-    font-weight: var(--fw-bold);
-    font-size: 2rem;
-    color: var(--deep-aquamarine);
-    vertical-align: middle;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  color: var(--deep-aquamarine);
+  vertical-align: middle;
 }
 
 #old-price {
-    font-family: var(--ff-base);
-    font-weight: var(--fw-regular);
-    font-size: 0.8125rem;
-    text-decoration: line-through;
-    line-height: 1.4375rem;
-    color: var(--aurometal);
-    align-content: center;
-    align-items: center;
-    margin-left: 2rem;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 0.8125rem;
+  text-decoration: line-through;
+  line-height: 1.4375rem;
+  color: var(--aurometal);
+  align-content: center;
+  align-items: center;
+  margin-left: 2rem;
 }
 
 footer {
   text-align: center;
   position: absolute;
-  bottom: 0;
+  bottom: -3.5rem;
   background-color: var(--deep-aquamarine-d);
   width: 100%;
   color: var(--pure-white);
@@ -240,28 +240,32 @@ footer img {
     flex-direction: row;
   }
 
-header {
-  padding: 2rem;
-}
+  header {
+    padding: 2rem;
+  }
 
-h1 {
-  margin-top: 0;
-}
+  h1 {
+    margin-top: 0;
+  }
 
-.description {
-  padding: 0 2rem;
-}
-.price {
-  padding: 1.5rem 2rem 0 2rem;
-  margin: 0;
-}
+  .description {
+    padding: 0 2rem;
+  }
 
-#left {
-  width: 50%;
-}
+  .price {
+    padding: 1.5rem 2rem 0 2rem;
+    margin: 0;
+  }
+
+  #left {
+    width: 50%;
+  }
 
   #right {
     width: 50%;
   }
 
+  footer {
+    bottom: 0;
+  }
 }
