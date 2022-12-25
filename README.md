@@ -3,8 +3,8 @@
 It's my first completed frontend mentor challenge - this one can be found here: [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
 Design: 
-![Design for the desktop version](./design/desktop.jpg)
-![Design for the mobile version] (./design/mobile.jpg)
+![Design for the desktop version](./design/desktop-design.jpg)
+![Design for the mobile version] (./design/mobile-design.jpg)
 
 Goals:
 1. Code a fully responsive page
