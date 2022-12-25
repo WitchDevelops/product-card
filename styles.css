@@ -1,4 +1,5 @@
 :root {
+    --aquamarine: hsl(150, 65%, 60%);
     --deep-aquamarine: hsl(158, 36%, 37%);
     --deep-aquamarine-d: hsl(158, 36%, 20%);
     --aurometal: hsl(228, 12%, 48%);
@@ -92,21 +93,21 @@ body {
 main {
     background-color: var(--pure-white);
     margin: 1.75rem 1rem;
-    max-width: 600px;
+    width: 90vw;
+    height: calc(90vh-1rem);
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    overflow: hidden;
+}
+main img {
+    width: 100%;
 }
 
-img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-header, .description, .price {
+header {
     padding: 1.5rem;
 }
 
@@ -130,18 +131,50 @@ h2 {
 }
 
 button {
-    width: 86%;
+    width: 100%;
     padding: 1rem;
     background-color: var(--deep-aquamarine);
+    border: none;
     border-radius: 10px;
     color: var(--pure-white);
     font-family: var(--ff-base);
     font-weight: var(--fw-bold);
     font-size: 0.875rem;
     line-height: 1.06rem;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    
+    margin: auto;
+    margin-top: 1.25rem;
+}
+
+button:focus,
+button:hover {
+  background-color: var(--deep-aquamarine-d);
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--deep-aquamarine-d);
+  width: 100%;
+  color: var(--pure-white);
+  font-family: var(--ff-base);
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+footer a {
+  color: var(--pure-white);
+  text-decoration: none;
+}
+
+footer a:hover,
+a:active {
+  color: var(--aquamarine);
+}
+
+footer img {
+  display: inline-block;
+  max-height: 0.9rem;
 }
 
 .centered {
@@ -154,13 +187,16 @@ button {
     color: var(--aurometal);
     font-size: 0.875rem;
     line-height: 1.44rem;
-    padding-top: 0;
+    padding: 0 1.5rem;
 }
 
 .price {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 2px red solid;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 2px red solid;
 }
 
 #new-price {
@@ -168,6 +204,7 @@ button {
     font-weight: var(--fw-bold);
     font-size: 2rem;
     color: var(--deep-aquamarine);
+
     border: 2px red solid;
 }
 
@@ -178,6 +215,9 @@ button {
     text-decoration: line-through;
     line-height: 1.4375rem;
     color: var(--aurometal);
+    align-content: center;
+    align-items: center;
+    margin-left: 2rem;
     border: 2px red solid;
 }
 
