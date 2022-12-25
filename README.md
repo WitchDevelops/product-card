@@ -13,6 +13,8 @@ Goals:
 # Solution to the challenge
 
 Screenshots of the finished challenge:
+![Desktop screenshot](./screenshots/dekstop.png)
+![Mobile screenshot](./screenshots/mobile-S8.png)
 
 # Link
 Live solution can be viewed here: [https://witchdevelops.github.io/product-card/](https://witchdevelops.github.io/product-card/)
