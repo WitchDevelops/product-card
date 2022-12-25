@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--custom CSS-->
   <link rel="stylesheet" href="./styles.css">
 
@@ -11,38 +12,52 @@
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 
 <body>
-<main class="centered">
-  <article>
-    <!--picture semantic tag to tell HTML to use a particular image depending on specified parameters (e.g. screen size). As the last one is given the default image.-->
-    <picture>
-      <source media="(min-width: 1440px)" srcset="./images/image-product-desktop.jpg">
-      <img src="./images/image-product-mobile.jpg" alt="a bif bottle of perfume by Channel">
-    </picture>
-    
-  <header>
-    <h1>Perfume</h1>
-    <h2>Gabrielle Essence Eau De Parfum</h2>
-  </header>
-  <div class="description">
-    <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-      Perfumer-Creator for the House of CHANEL.</p>
-  </div>
-  <div class="price">
-    <p><span id="new-price">$149.99</span><span id="old-price"> $169.99</span></p>
-    <button>Add to Cart</button>
-  </div>
-</article>
-</main>
-  
+  <main class="centered">
+    <article>
+      <!--picture semantic tag to tell HTML to use a particular image depending on specified parameters (e.g. screen size). As the last one is given the default image.-->
+      <div id="left">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/image-product-desktop.jpg">
+          <img src="./images/image-product-mobile.jpg" alt="a bif bottle of perfume by Channel">
+        </picture>
+      </div>
+
+      <div id="right">
+        <header>
+          <h1>Perfume</h1>
+          <h2>Gabrielle Essence Eau De Parfum</h2>
+        </header>
+        <div class="description">
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.</p>
+        </div>
+        <div class="price">
+          <p><span id="new-price">$149.99</span><span id="old-price"> $169.99</span></p>
+          <button>
+            <span>
+              <img id="cart-icon" src="./images/icon-cart.svg" alt="cart icon">
+            </span>
+             Add to Cart
+          </button>
+        </div>
+      </div>
+    </article>
+  </main>
+
   <footer class="centered">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a></p>
-    <p>Coded by <img src="./images/GitHub-logo.png" alt="GitHub logo"> <a href="https://github.com/WitchDevelops" target="_blank" rel="noopener">Dominika Wojewska</a></p>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+        Mentor</a></p>
+    <p>Coded by <a href="https://www.linkedin.com/in/dominika-wojewska-b0207054/" target="_blank" rel="noopener">Dominika Wojewska</a> <img src="./images/GitHub-logo.png" alt="GitHub logo"> <a href="https://github.com/WitchDevelops"
+        target="_blank" rel="noopener"> WitchDevelops</a></p>
   </footer>
 </body>
+
 </html>
