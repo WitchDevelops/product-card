@@ -4,7 +4,7 @@ It's my first completed frontend mentor challenge - this one can be found here: 
 
 Design: 
 ![Design for the desktop version](./design/desktop-design.jpg)
-![Design for the mobile version] (./design/mobile-design.jpg)
+![Design for the mobile version](./design/mobile-design.jpg)
 
 Goals:
 1. Code a fully responsive page
