@@ -31,6 +31,7 @@ I learned about the <code>picture</code> tag! It allows to provide a set of alte
 
 Here is a code snippet that illustrates this:
 
+![picture tag](/product-snippet.jpg)
 
 It tells the browser to serve a bigger image on wider screens, with having a fallback image for older browsers and smaller screen sizes.
 I will definitely use it more in the future.
