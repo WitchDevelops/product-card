@@ -31,11 +31,6 @@ I learned about the <code>picture</code> tag! It allows to provide a set of alte
 
 Here is a code snippet that illustrates this:
 
-```html
-     <picture>
-          <source media="(min-width: 1440px)" srcset="./images/image-product-desktop.jpg">
-          <img src="./images/image-product-mobile.jpg" alt="a big bottle of perfume by Channel">
-    </picture>
-```
+
 It tells the browser to serve a bigger image on wider screens, with having a fallback image for older browsers and smaller screen sizes.
 I will definitely use it more in the future.
